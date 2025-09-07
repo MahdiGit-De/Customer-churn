@@ -16,12 +16,9 @@ Outputs:
 Dependencies: pandas, scikit-learn, lightgbm, shap, matplotlib, seaborn
 """
 
-import os
 import json
 from pathlib import Path
 from typing import Tuple, List
-
-import numpy as np
 import pandas as pd
 
 from sklearn.compose import ColumnTransformer
