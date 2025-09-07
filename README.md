@@ -6,6 +6,8 @@
 This repository hosts code and assets for a Customer Churn Prediction project.
 Use it to explore data, train models, and evaluate churn risk.
 
+CI: ![CI](https://github.com/MahdiGit-De/Customer-churn/actions/workflows/ci.yml/badge.svg)
+
 ## Stack
 - Python, pandas, scikit-learn
 - LightGBM for modeling
@@ -22,6 +24,12 @@ Use it to explore data, train models, and evaluate churn risk.
   - `python demo4.py`
 - Outputs are saved to `outputs/`:
   - `roc_curve.png`, `confusion_matrix.png`, `shap_summary.png`, and `metrics.json`
+
+## Repository metadata
+- To set description and topics via API (requires PAT with repo scope):
+  - PowerShell:
+    - `$env:GITHUB_TOKEN = '<YOUR_TOKEN>'`
+    - `./scripts/set_repo_metadata.ps1 -Owner 'MahdiGit-De' -Repo 'Customer-churn' -Description 'Customer churn prediction with LightGBM & SHAP' -Topics 'ml','lightgbm','shap','churn','telco'`
 
 ## Notes
 - The script tries multiple public mirrors for the dataset for robustness.
